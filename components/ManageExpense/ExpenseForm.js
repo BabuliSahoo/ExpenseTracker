@@ -1,4 +1,4 @@
-import { View,TextInput } from "react-native";
+import { View } from "react-native";
 import Input from "./Input";
 
 function ExpenseForm() {
@@ -15,16 +15,22 @@ function ExpenseForm() {
           onChangeText: amountChangedHandler,
         }}
       />
-      <Input label="Date" textInputConfig={{
-        placeholder:'YYYY-MM-DD',
-        maxLenght : 10,
-        onChangeText: () =>{},
-      }}/>
-      <Input label="Description"  textInputConfig={{
-        multiline :true,
-        //autocoorrect:false //default is true
-        //autoCapitalize:false //default is true
-      }}/>
+      <Input
+        label="Date"
+        textInputConfig={{
+          placeholder: "YYYY-MM-DD",
+          maxLenght: 10,
+          onChangeText: () => {},
+        }}
+      />
+      <Input
+        label="Description"
+        textInputConfig={{
+          multiline: true,
+          //autocoorrect:false //default is true
+          //autoCapitalize:false //default is true
+        }}
+      />
     </View>
   );
 }
