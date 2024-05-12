@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import Input from './Input';
 import Button from '../UI/Button';
-import { getFormattedDate } from '../../utility/date';
+import { getFormattedDate } from '../../util/date';
 import { GlobalStyles } from '../../constants/styles';
 
 function ExpenseForm({ submitButtonLabel, onCancel, onSubmit, defaultValues }) {
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 140,
+    marginTop: 120,
   },
   button: {
     minWidth: 120,

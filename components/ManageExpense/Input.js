@@ -2,7 +2,7 @@ import { StyleSheet, Text, TextInput, View } from 'react-native';
 
 import { GlobalStyles } from '../../constants/styles';
 
-function Input({ label,style, invalid, textInputConfig }) {
+function Input({ label, invalid, style, textInputConfig }) {
 
   const inputStyles = [styles.input];
 
@@ -27,8 +27,7 @@ export default Input;
 const styles = StyleSheet.create({
   inputContainer: {
     marginHorizontal: 4,
-    marginVertical: 8,
-    flex:1
+    marginVertical: 8
   },
   label: {
     fontSize: 12,
